@@ -3,3 +3,5 @@
 
 /.idea/
 /task
+
+package-lock.json
