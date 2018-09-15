@@ -4,9 +4,8 @@
 @import "vars"
 @import "helpers"
 
-// STYLES HERE
-
-@import "media" // Always in the END
+body
+  background-color: $light-cyan
 
 .header
   &__user-card-wrapper
@@ -14,7 +13,7 @@
       image: url("../img/header-bg.jpg")
       position: center 0
       size: cover
-      
+
   &__nav-wrapper
     background-color: #fff
 
@@ -79,7 +78,7 @@
   &__icon
     color: #969696
     @include sizes(16px)
-  
+
   &__title
     color: #969696
     word-wrap: normal
@@ -122,5 +121,144 @@
         transition: all 0.4s
 
 
+.cards
+  padding:
+    top: 50px
+    bottom: 60px
+
+  &__columns
+    display: flex
+    justify-content: space-between
+    width: 100%
+
+  &__col
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    width: calc(50% - 40px)
+
+  &__item
+    margin: 10px 0
+    display: block
+    width: 100%
+
+.card
+  position: relative
+  padding: 30px 25px
+  background-color: #ffffff
+  color: $blue
+  border-radius: 15px
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1)
+  overflow: hidden
+
+  &__title
+    font:
+      size: rem(30px)
+      family: 'Bebas Neue Regular', sans-serif
+      weight: normal
+    text-transform: uppercase
+
+  &__subtitle
+    font-weight: bold
+
+  &__photos
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+  &__link
+    color: $cyan
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+
+  &__photo
+    @include sizes(rem(60))
+
+    &--empty
+      box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1)
+      border-radius: 3px
+
+  &__monobrow
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    display: block
+    height: 5px
+    border-top:
+      left-radius: 15px
+      right-radius: 15px
+
+    &--blue
+      background-color: #5fc0e7
+
+    &--purple
+      background-color: #7c4098
+
+    &--red
+      background-color: #fa5770
+
+    &--orange
+      background-color: #f26632
 
 
+.gallery
+  &__tabs
+    padding: 15px 35px
+
+  &__images
+    padding: 25px
+
+.tabs
+  background-color: #ffffff
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1)
+  color: $blue
+  border-radius: 50px
+  display: flex
+  flex-direction: row
+  align-items: center
+  width: 100%
+
+  &__title
+    font-size: rem(18)
+    font-family: 'Raleway Bold', sans-serif
+
+  &__list
+    display: flex
+    flex-direction: row
+    margin-left: 30px
+    flex-wrap: wrap
+
+  &__item
+    display: block
+    padding:
+      top: 10px
+      right: 20px
+      bottom: 8px
+      left: 20px
+    font-size: rem(16)
+    border-radius: 50px
+    text-transform: uppercase
+    color: $blue
+    background: none
+    border: none
+    cursor: pointer
+
+    &:hover
+      background-color: $cyan
+      color: #ffffff
+      transition: all 0.4s
+
+  &__item-wrapper:not(:last-child)
+    margin-right: 34px
+
+
+.images
+  background-color: #fff
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1)
+  color: $blue
+  width: 100%
+
+@import "media" // Always in the END
