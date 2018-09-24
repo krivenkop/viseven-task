@@ -72,9 +72,9 @@ gulp.task('sass', function () {
 gulp.task('common', function () {
   return gulp
     .src(['src/js/common.js'])
-    .pipe(gp.concat('common.min.js'))
-    .pipe(gp.uglify())
-    .pipe(gulp.dest('src/js'))
+    // .pipe(gp.concat('common.min.js'))
+    // .pipe(gp.uglify())
+    .pipe(gulp.dest('dist/js'))
     .on('end', browserSync.reload);
 });
 
@@ -164,7 +164,7 @@ gulp.task('serve', function () {
       baseDir: './src',
     },
   });
-  browserSync.watch(['src/libs', 'src/assets'], browserSync.reload);
+  browserSync.watch(['src/assets'], browserSync.reload);
 });
 
 // *

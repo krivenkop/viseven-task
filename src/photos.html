@@ -2,9 +2,197 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Photos</title>
+  <title>Viseven Task | Photos</title>
+
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+<header class="header">
+  <div class="header__user-card-wrapper user-card">
+    <div class="container">
+      <div class="row">
+        <div class="header__user-card user-card d-flex jcfs pos-r w-100p">
+          <img src="img/person.png" alt="Andrew Sokolovsky" class="user-card__img">
+          <div class="user-card__info center-v d-flex fdc jcc">
+            <h1 class="user-card__title">Andrew Sokolovsky</h1>
+            <div class="user-card__topics topics d-flex jcfs">
+              <div class="topics__item d-flex jcfs aic">
+                <img class="topics__icon" src="img/icons/portfolio.png" alt="Portfolio">
+                <h4 class="topics__title">Manager</h4>
+              </div>
 
+              <div class="topics__item d-flex jcfs aic">
+                <img class="topics__icon" src="img/icons/marker.png" alt="Marker">
+                <h4 class="topics__title">Lives In Kiev</h4>
+              </div>
+
+              <div class="topics__item d-flex jcfs aic">
+                <img class="topics__icon" src="img/icons/gears.png" alt="Gears">
+                <h4 class="topics__title">66 have you in circles</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__nav-wrapper">
+    <div class="container">
+      <div class="row">
+        <nav class="header__nav nav d-flex">
+          <a href="about.html" class="nav__item">About</a>
+          <a href="photos.html" class="nav__item">Photos</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="gallery mt-25">
+  <div class="container">
+    <div class="row">
+      <div class="gallery__tabs tabs">
+        <p class="tabs__title">Show me:</p>
+        <ul class="tabs__list">
+          <li class="tabs__item-wrapper">
+            <button class="tabs__item active" data-tag="all">all</button>
+          </li>
+          <li class="tabs__item-wrapper">
+            <button class="tabs__item" data-tag="architecture">architecture</button>
+          </li>
+          <li class="tabs__item-wrapper">
+            <button class="tabs__item" data-tag="images">images</button>
+          </li>
+          <li class="tabs__item-wrapper">
+            <button class="tabs__item" data-tag="nature">nature</button>
+          </li>
+          <li class="tabs__item-wrapper">
+            <button class="tabs__item" data-tag="photography">photography</button>
+          </li>
+          <li class="tabs__item-wrapper">
+            <button class="tabs__item" data-tag="videos">videos</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="gallery__images images mt-30">
+        <div class="images__container">
+          <div class="images__item">
+            <img src="./img/gallery/1.jpg"
+                 alt="nature"
+                 data-src="./img/gallery/1_big.jpg"
+                 class="images__img"
+                 data-tag="nature">
+            <div class="images__overlay"></div>
+          </div>
+          <div class="images__item">
+            <img src="./img/gallery/2.jpg"
+                 data-src="./img/gallery/2_big.jpg"
+                 alt="images, nature"
+                 class="images__img"
+                 data-tag="images, nature">
+            <div class="images__overlay"></div>
+          </div>
+          <div class="images__item">
+            <img src="./img/gallery/3.jpg"
+                 data-src="./img/gallery/3_big.jpg"
+                 alt="photography"
+                 class="images__img"
+                 data-tag="photography">
+            <div class="images__overlay"></div>
+          </div>
+          <div class="images__item">
+            <img src="./img/gallery/4.jpg"
+                 data-src="./img/gallery/4_big.jpg"
+                 alt="images, nature"
+                 class="images__img"
+                 data-tag="images, nature">
+            <div class="images__overlay"></div>
+          </div>
+
+          <div class="images__item">
+            <img src="./img/gallery/5.jpg"
+                 data-src="./img/gallery/5_big.jpg"
+                 alt="photography"
+                 class="images__img"
+                 data-tag="photography">
+            <div class="images__overlay"></div>
+          </div>
+          <div class="images__item">
+            <img src="./img/gallery/6.jpg"
+                 data-src="./img/gallery/6_big.jpg"
+                 alt="images"
+                 class="images__img"
+                 data-tag="images">
+            <div class="images__overlay"></div>
+          </div>
+          <div class="images__item">
+            <img src="./img/gallery/7.jpg"
+                 data-src="./img/gallery/7_big.jpg"
+                 alt="photography, images, nature"
+                 class="images__img"
+                 data-tag="photography, images, nature">
+            <div class="images__overlay"></div>
+          </div>
+          <div class="images__item">
+            <img src="./img/gallery/8.jpg"
+                 data-src="./img/gallery/8_big.jpg"
+                 alt="images, nature"
+                 class="images__img"
+                 data-tag="images, nature">
+            <div class="images__overlay"></div>
+          </div>
+
+          <div class="images__item">
+            <img src="./img/gallery/9.jpg"
+                 data-src="./img/gallery/9_big.jpg"
+                 alt="images"
+                 class="images__img"
+                 data-tag="images">
+            <div class="images__overlay"></div>
+          </div>
+          <div class="images__item">
+            <img src="./img/gallery/10.jpg"
+                 data-src="./img/gallery/10_big.jpg"
+                 alt="architecture"
+                 class="images__img"
+                 data-tag="architecture">
+            <div class="images__overlay"></div>
+          </div>
+          <div class="images__item">
+            <img src="./img/gallery/11.jpg"
+                 data-src="./img/gallery/11_big.jpg"
+                 alt="photography"
+                 class="images__img"
+                 data-tag="photography">
+            <div class="images__overlay"></div>
+          </div>
+          <div class="images__item">
+            <img src="./img/gallery/12.jpg"
+                 data-src="./img/gallery/12_big.jpg"
+                 alt="nature"
+                 class="images__img"
+                 data-tag="nature">
+            <div class="images__overlay"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup hidden">
+  <div class="popup__overlay"></div>
+  <div class="popup__img-wrapper">
+    <img src="" alt="" class="popup__img">
+    <button class="popup__close" aria-label="close">
+      <img src="./img/icons/close.png" alt="close">
+    </button>
+  </div>
+</div>
+<script src="./js/common.js"></script>
 </body>
 </html>
