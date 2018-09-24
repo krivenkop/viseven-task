@@ -191,7 +191,7 @@ gulp.task(
 
 gulp.task('buildJS', function () {
   return gulp
-    .src(['src/js/scripts.min.js', 'src/js/common.min.js'])
+    .src(['src/js/common.js'])
     .pipe(gulp.dest('dist/js'));
 });
 
@@ -205,9 +205,9 @@ gulp.task('buildHTML', function () {
 
 gulp.task('imagemin', function () {
   return gulp
-    .src('src/assets/img/**/*')
+    .src('src/img/**/*')
     .pipe(gp.cache(gp.imagemin()))
-    .pipe(gulp.dest('dist/assets/img'));
+    .pipe(gulp.dest('dist/img'));
 });
 
 gulp.task('removedist', function () {
